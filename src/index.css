@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Leaflet map container */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
 /* Custom marker pulse animation */
 @keyframes pulse {
   0% {
@@ -22,44 +29,9 @@
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Custom marker styling */
-.custom-div-icon {
-  background: none;
-  border: none;
-}
-
-/* Leaflet popup customization */
-.leaflet-popup-content-wrapper {
-  border-radius: 0.5rem;
-  @apply shadow-lg;
-}
-
-.leaflet-popup-content {
-  margin: 0;
-  @apply p-0;
-}
-
-/* Calendar day hover effect */
-.calendar-day:hover {
-  @apply bg-gray-50 dark:bg-gray-700 transition-colors;
-}
-
-/* Dark mode adjustments */
-.dark .leaflet-popup-content-wrapper {
-  @apply bg-gray-800 text-white;
-}
-
-.dark .leaflet-popup-tip {
-  @apply bg-gray-800;
-}
-
-/* Loading animation */
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+/* Reset default styles */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white;
   }
-}
-
-.loading-spinner {
-  @apply animate-spin;
 }

@@ -1,12 +1,26 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/shsv-produce-mobile/',  // Update this to match your repository name
+  base: '/shsv-produce-mobile/',
+  css: {
+    modules: {
+      localsConvention: 'camelCase',
+      generateScopedName: '[local]_[hash:base64:5]',
+    },
+  },
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: true,
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          leaflet: ['leaflet', 'react-leaflet']
+        }
+      }
+    }
   }
 })

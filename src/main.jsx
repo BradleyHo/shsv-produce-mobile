@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import App from './App';
-import './index.css';
+import './index.css';  // This is our only CSS import now
 
 // Import translations
 import { translations } from './i18n/translations';

@@ -1,67 +1,130 @@
-// src/i18n/translations.js
 export const translations = {
   en: {
-    appName: 'Second Harvest Produce Mobile',
+    appTitle: 'Second Harvest Produce Mobile',
     subtitle: 'Free Fresh Produce in Your Neighborhood',
-    nav: {
-      calendar: 'Calendar',
-      map: 'Map',
-      list: 'List'
-    },
-    calendar: {
-      today: 'Today',
-      noEvents: 'No distributions today',
-      addToCalendar: 'Add to Calendar'
-    },
-    map: {
-      title: 'Distribution Locations',
-      yourLocation: 'Your Location',
-      getDirections: 'Get Directions'
-    },
-    list: {
-      search: 'Search locations...',
-      sortBy: {
-        region: 'Region',
-        time: 'Time',
-        day: 'Day'
-      }
-    },
-    common: {
-      loading: 'Loading...',
-      error: 'Something went wrong',
-      retry: 'Retry'
-    }
+    calendar: 'Calendar',
+    map: 'Map',
+    list: 'List',
+    faq: 'FAQ',
+    recipes: 'Recipes',
+    search: 'Search',
+    useMyLocation: 'Use my location',
+    enterAddress: 'Enter ZIP code or address',
+    distance: '{distance} miles away',
+    getDirections: 'Get Directions',
+    moreResources: 'More Food Resources',
+    createdBy: 'Created by Bradley Ho'
   },
   es: {
-    appName: 'Produce Mobile de Second Harvest',
+    appTitle: 'Second Harvest Produce Mobile',
     subtitle: 'Frutas y Verduras Frescas Gratis en su Vecindario',
-    nav: {
-      calendar: 'Calendario',
-      map: 'Mapa',
-      list: 'Lista'
-    },
-    calendar: {
-      today: 'Hoy',
-      noEvents: 'No hay distribuciones hoy',
-      addToCalendar: 'Agregar al Calendario'
-    },
-    map: {
-      title: 'Ubicaciones de Distribución',
-      yourLocation: 'Su Ubicación',
-      getDirections: 'Obtener Direcciones'
-    },
-    list: {
-      search: 'Buscar ubicaciones...',
-      sortBy: {
-        region: 'Región',
-        time: 'Hora',
-        day: 'Día'
-      }
-    },
-    common: {
-      loading: 'Cargando...',
-      error: 'Algo salió mal',
-      retry: 'Reintentar'
-    }
+    calendar: 'Calendario',
+    map: 'Mapa',
+    list: 'Lista',
+    faq: 'Preguntas Frecuentes',
+    recipes: 'Recetas',
+    search: 'Buscar',
+    useMyLocation: 'Usar mi ubicación',
+    enterAddress: 'Ingrese código postal o dirección',
+    distance: 'a {distance} millas',
+    getDirections: 'Obtener Direcciones',
+    moreResources: 'Más Recursos de Alimentos',
+    createdBy: 'Creado por Bradley Ho'
+  },
+  'zh-CN': {
+    appTitle: 'Second Harvest流动生鲜',
+    subtitle: '在您的社区获取免费新鲜农产品',
+    calendar: '日历',
+    map: '地图',
+    list: '列表',
+    faq: '常见问题',
+    recipes: '食谱',
+    search: '搜索',
+    useMyLocation: '使用我的位置',
+    enterAddress: '输入邮编或地址',
+    distance: '距离{distance}英里',
+    getDirections: '获取路线',
+    moreResources: '更多食物资源',
+    createdBy: '由Bradley Ho创建'
+  },
+  'zh-TW': {
+    appTitle: 'Second Harvest流動生鮮',
+    subtitle: '在您的社區獲取免費新鮮農產品',
+    calendar: '日曆',
+    map: '地圖',
+    list: '列表',
+    faq: '常見問題',
+    recipes: '食譜',
+    search: '搜尋',
+    useMyLocation: '使用我的位置',
+    enterAddress: '輸入郵遞區號或地址',
+    distance: '距離{distance}英里',
+    getDirections: '獲取路線',
+    moreResources: '更多食物資源',
+    createdBy: '由Bradley Ho建立'
+  },
+  tl: {
+    appTitle: 'Second Harvest Produce Mobile',
+    subtitle: 'Libreng Sariwang Prutas at Gulay sa Iyong Kapitbahayan',
+    calendar: 'Kalendaryo',
+    map: 'Mapa',
+    list: 'Listahan',
+    faq: 'Mga Karaniwang Katanungan',
+    recipes: 'Mga Recipe',
+    search: 'Maghanap',
+    useMyLocation: 'Gamitin ang aking lokasyon',
+    enterAddress: 'Ilagay ang ZIP code o address',
+    distance: '{distance} milya ang layo',
+    getDirections: 'Kunin ang Direksyon',
+    moreResources: 'Karagdagang Resources ng Pagkain',
+    createdBy: 'Ginawa ni Bradley Ho'
+  },
+  vi: {
+    appTitle: 'Second Harvest Produce Mobile',
+    subtitle: 'Rau Củ Quả Tươi Miễn Phí Trong Khu Vực Của Bạn',
+    calendar: 'Lịch',
+    map: 'Bản đồ',
+    list: 'Danh sách',
+    faq: 'Câu hỏi thường gặp',
+    recipes: 'Công thức nấu ăn',
+    search: 'Tìm kiếm',
+    useMyLocation: 'Sử dụng vị trí của tôi',
+    enterAddress: 'Nhập mã ZIP hoặc địa chỉ',
+    distance: 'Cách {distance} dặm',
+    getDirections: 'Xem chỉ đường',
+    moreResources: 'Thêm Nguồn Thực Phẩm',
+    createdBy: 'Được tạo bởi Bradley Ho'
+  },
+  ko: {
+    appTitle: 'Second Harvest 농산물 이동식 배급',
+    subtitle: '동네에서 무료 신선 농산물 받아가세요',
+    calendar: '달력',
+    map: '지도',
+    list: '목록',
+    faq: '자주 묻는 질문',
+    recipes: '레시피',
+    search: '검색',
+    useMyLocation: '내 위치 사용',
+    enterAddress: 'ZIP 코드 또는 주소 입력',
+    distance: '{distance}마일 거리',
+    getDirections: '길 안내',
+    moreResources: '더 많은 식품 자원',
+    createdBy: 'Bradley Ho 제작'
+  },
+  ja: {
+    appTitle: 'Second Harvest 移動式生鮮食品',
+    subtitle: 'あなたの近所で無料の新鮮な農産物を',
+    calendar: 'カレンダー',
+    map: '地図',
+    list: 'リスト',
+    faq: 'よくある質問',
+    recipes: 'レシピ',
+    search: '検索',
+    useMyLocation: '現在地を使用',
+    enterAddress: '郵便番号または住所を入力',
+    distance: '{distance}マイル先',
+    getDirections: '道順を表示',
+    moreResources: 'その他の食料支援',
+    createdBy: 'Bradley Ho 制作'
   }
 };
